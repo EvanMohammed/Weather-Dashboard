@@ -1,0 +1,37 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #106151;
+    color: white;
+    font-size: 30px;
+  }
+ body{
+    position: relative;
+ }
+  #citySearch{
+      margin: 20px;
+  }
+  form {
+      background-color: rgb(240, 238, 238);
+      margin: 10px;
+    position: absolute;
+    left: 10px;
+    width: 400px;
+    height: 120px;
+    border: 1px solid #106151;
+  }
+  label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+.searchContents{
+    margin: 10px;
+}
+.fiveDayForecast{
+    margin: 10px;
+}

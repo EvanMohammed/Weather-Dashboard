@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <div class="row">
+        <form action="/form/submit" method="GET">
+            <div class="searchContents">
+                <label for="site-search">Search for a City:</label>
+                <input type="text" name="text" class="search" id="search-text" placeholder="Search here!">
+                <input type="submit" name="submit" class="btn btn-info" id="search-button" value="Search">
+            </div>
+            <br />
+            <br />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header"> <strong>
+                                <i class="fa fa-table"></i> Recent Cities
+                            </strong>
+                        </div>
+                        <div class="card-body" id="recent-cities">
+                            <button type="button" class="btn btn-light" id="recent5">
+                                <h5></h5>
+                            </button>
+                            <br />
+                            <button type="button" class="btn btn-light" id="recent4"></button>
+                            <br />
+                            <button type="button" class="btn btn-light" id="recent3"></button>
+                            <br />
+                            <button type="button" class="btn btn-light" id="recent2"></button>
+                            <br />
+                            <button type="button" class="btn btn-light" id="recent1"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </div>
+
+
+    </div>
+
+</form>
+    </div>
+    <div class="container">
+        <div class="row-sm-12">
+            <div class="card" style="width: 1200px;">
+                <div class="card-header">
+                    Today
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title" id="weatherResult"></h4>
+                    <p class="card-text" id="temp"></p>
+                    <p class="card-text" id="humidity"></p>
+                    <p class="card-text" id="windSpeed"></p>
+                    <p class="card-text" id="uvIndex"></p>
+
+                </div>
+
+            </div>
+        </div>
+        <br />
+
+        <!--here we retrieve the recent searched forecast news-->
+        <div class="row">
+            <div class="col">
+                <div class="card text-white bg-info mb-3" style="max-width: 12rem;">
+                    <div class="card-header" id="card-header1"></div>
+                    <div class="card-body">
+                        <h5 class="card-title1"></h5>
+                        <p class="card-text1" id="temperature1"></p>
+                        <p class="card-text1" id="humidity1"></p>
+                        <p class="card-text1" id="windSpeed1"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card text-white bg-info mb-3" style="max-width: 12rem;">
+                    <div class="card-header" id="card-header2"></div>
+                    <div class="card-body">
+                        <h5 class="card-title2"></h5>
+                        <p class="card-text2" id="temperature2"></p>
+                        <p class="card-text2" id="humidity2"></p>
+                        <p class="card-text2" id="windSpeed2"></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card text-white bg-info mb-3" style="max-width: 12rem;">
+                    <div class="card-header" id="card-header3"></div>
+                    <div class="card-body">
+                        <h5 class="card-title3"></h5>
+                        <p class="card-text3" id="temperature3"></p>
+                        <p class="card-text3" id="humidity3"></p>
+                        <p class="card-text3" id="windSpeed3"></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card text-white bg-info mb-3" style="max-width: 12rem;">
+                    <div class="card-header" id="card-header4"></div>
+                    <div class="card-body">
+                        <h5 class="card-title4"></h5>
+                        <p class="card-text4" id="temperature4"></p>
+                        <p class="card-text4" id="humidity4"></p>
+                        <p class="card-text4" id="windSpeed4"></p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card text-white bg-info mb-3" style="max-width: 12rem;">
+                    <div class="card-header" id="card-header5"></div>
+                    <div class="card-body">
+                        <h5 class="card-title5"></h5>
+                        <p class="card-text5" id="temperature5"></p>
+                        <p class="card-text5" id="humidity5"></p>
+                        <p class="card-text5" id="windSpeed5"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
